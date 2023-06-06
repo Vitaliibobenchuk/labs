@@ -5,6 +5,10 @@ print("Привіт! Я перетворюю номер у словесне пр
 number = input("Будь ласка, введіть номер: ")
 
 if not number.isdigit(): 
-  print("Ви ввели неправильний номер.") else: # Перетворюємо номер на словесне представлення word_number = "" for digit in number: word_number += number_dict[digit] + " "
+  print("Ви ввели неправильний номер.") else: 
+# Перетворюємо номер на словесне представлення 
+word_number = ""
+for digit in number:
+  word_number += number_dict[digit] + " "
 
 print("Ваш номер у словесному представленні: ", word_number)
